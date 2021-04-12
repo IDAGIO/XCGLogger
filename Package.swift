@@ -11,7 +11,23 @@ let package = Package(
             name: "XCGLogger",
             targets: ["XCGLogger"]),
         .library(
+            name: "XCGLogger-Static",
+            type: .static,
+            targets: ["XCGLogger"]),
+        .library(
+            name: "XCGLogger-Dynamic",
+            type: .dynamic,
+            targets: ["XCGLogger"]),
+        .library(
             name: "ObjcExceptionBridging",
+            targets: ["ObjcExceptionBridging"]),
+        .library(
+            name: "ObjcExceptionBridging-Static",
+            type: .static,
+            targets: ["ObjcExceptionBridging"]),
+        .library(
+            name: "ObjcExceptionBridging-Dynamic",
+            type: .dynamic,
             targets: ["ObjcExceptionBridging"]),
     ],
     dependencies: [
